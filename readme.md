@@ -25,8 +25,11 @@ Este projeto é uma API de registro e autenticação de usuários utilizando Fla
    cd seu_projeto
 
 ## Crie um ambiente virtual (opcional, mas recomendado):
+
 python -m venv venv
+
 source venv/bin/activate  # Para Linux ou Mac
+
 venv\Scripts\activate     # Para Windows
 
 ## install lib
