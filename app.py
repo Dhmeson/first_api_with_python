@@ -2,12 +2,13 @@ from flask import Flask
 from database.sqlite import  init_db
 
 from route.user import user_blueprint  # Importação do Blueprint
-
+from route.home import home_blueprint  # Importação do Blueprint
 app = Flask(__name__)
 app.secret_key = 'sua_chave_secreta'
 
 # Registra o Blueprint
 app.register_blueprint(user_blueprint, url_prefix='/users')
+app.register_blueprint(home_blueprint, url_prefix='/')
 
 @app.route('/')
 def index():
